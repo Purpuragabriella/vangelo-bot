@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 
 # --- CONFIGURAZIONE ---
 BOT_TOKEN = "6152033559:AAENgTWUcMIJ9X_0Pd3tDljOJyeUJiQpkLk"
-CHAT_ID = "@Innamorati_della_lode" 
+CHAT_ID = "@lode_a_gesu" 
 
 RSS_URL = "http://feed.evangelizo.org/rss/v2/reading_gospel-it.xml"
 
