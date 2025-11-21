@@ -5,11 +5,7 @@ from bs4 import BeautifulSoup
 
 # --- CONFIGURAZIONE ---
 BOT_TOKEN = "6152033559:AAENgTWUcMIJ9X_0Pd3tDljOJyeUJiQpkLk"
-
-# ATTENZIONE: Assicurati che questo sia il CANALE dove il bot è amministratore.
-# Se "@consigliperacquistibot" è il bot stesso, darà errore. 
-# Devi mettere l'username del CANALE o il tuo ID utente.
-CHAT_ID = "@consigliperacquistibot" 
+CHAT_ID = "@Innamorati_della_lode" 
 
 RSS_URL = "http://feed.evangelizo.org/rss/v2/reading_gospel-it.xml"
 
