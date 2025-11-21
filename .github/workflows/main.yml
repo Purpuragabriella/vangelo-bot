@@ -1,0 +1,25 @@
+name: Vangelo Quotidiano
+
+on:
+  schedule:
+    # Ore 06:00 UTC = Ore 07:00 (Inverno) / 08:00 (Estate) in Italia
+    - cron: '0 6 * * *'
+  workflow_dispatch: # Ti permette di cliccare "Run" manualmente per testare
+
+jobs:
+  run_script:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Scarica codice
+        uses: actions/checkout@v3
+
+      - name: Imposta Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Installa librerie
+        run: pip install -r requirements.txt
+
+      - name: Esegui bot
+        run: python main.py
